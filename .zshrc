@@ -36,7 +36,6 @@ rfkill block $(rfkill list | grep WAN | cut -c 1) && rfkill block $(rfkill list 
 	alias no3G="rfkill block $(rfkill list | grep WAN | cut -c 1)"
 	alias debloat="sudo pacman -Rns $(pacman -Qtdq)" # adapt this one to your usual package manager 
 	alias waku="yaourt -Suya" # adapt this one to your usual package manager
-	alias station="./.Station.sh" # The main script is also available on my github :-)
 
 # Use fzf !
 	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
