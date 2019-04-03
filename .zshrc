@@ -1,7 +1,7 @@
-#Deant's zshrc config file
+# Nabuchodnozzar's zshrc config file
 
 # Standard Conf.
-	export ZSH=/home/deant/.oh-my-zsh
+	export ZSH=/home/YOUR-USERNAME/.oh-my-zsh
 	ZSH_THEME="ys"
 	DISABLE_AUTO_UPDATE="true"
 	export UPDATE_ZSH_DAYS=12
@@ -31,7 +31,6 @@ rfkill block $(rfkill list | grep WAN | cut -c 1) && rfkill block $(rfkill list 
 	alias pi="seq -f '4/%g' 1 2 99999 | paste -sd-+ | bc -l"  # This one is just for fun ;-)
 	alias clock="tty-clock -csSD"
 	alias interfaces="ifconfig | grep flags | cut -d ' ' -f 1 | rev | cut -c 2- | rev"
-	alias sshNeji="ssh d3ant@37.187.107.10"
 	alias noBT="rfkill block $(rfkill list | grep bluetooth | cut -c 1)"
 	alias no3G="rfkill block $(rfkill list | grep WAN | cut -c 1)"
 	alias debloat="sudo pacman -Rns $(pacman -Qtdq)" # adapt this one to your usual package manager 
